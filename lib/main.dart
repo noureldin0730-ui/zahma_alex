@@ -516,8 +516,12 @@ class Car extends PositionComponent {
       Paint()..color = const Color(0xFFA8DCFF),
     );
 
+    // ✅ شباك ورا — الإصلاح هنا
     canvas.drawRRect(
-      Rect.fromLTWH(14, h - 35, w - 28, 18),
+      RRect.fromRectAndRadius(
+        Rect.fromLTWH(14, h - 35, w - 28, 18),
+        const Radius.circular(4),
+      ),
       Paint()..color = const Color(0xFFA8DCFF),
     );
 
